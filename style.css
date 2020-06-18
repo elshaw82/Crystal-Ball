@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+*  {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:100vw;
+    height:100vh;
+    border:solid black 1px;
+    background-image: linear-gradient(rgb(26, 26, 104), rgb(4, 4, 32));
+}
+
+.intro {
+    padding-top: 40px;
+    text-align: center;
+    animation: fadeIn ease 4s;
+    color:white;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.ask {
+    margin-top:15px;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color:white;
+    width:200px;
+    height:40px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f5c256;
+    border:none;
+    box-shadow: 2px 2px 1px #c09842, -2px -2px 1px #fdcc63;
+}
+
+.ask:active {
+    box-shadow: inset 2px 2px 1px #c09842, -2px -2px 1px #fdcc63;
+    outline:none;
+}
+
+.crystal-ball {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 355px;
+    height:355px;
+    text-align: center;
+}
+
+.glass {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 355px;
+    height:355px;
+    border-radius: 50%;
+    background-image: linear-gradient(195deg, #ffffff, #adadad, #999999, #808080);
+}
+
+.brighter {
+    box-shadow: -4px -5px 100px white;
+}
+
+#inner {
+    position: relative;
+    top:50px;
+    left:240px;
+    width:20px;
+    height:20px;
+    background-color: white;
+    border-radius: 50%;
+    opacity:1;
+}
+
+.answer {
+   margin-top: 130px;
+   color:#333333;
+
+}
+
+.animate {
+    animation: bounce 3s alternate;
+}
+
+.base-one {
+    position: absolute;
+    left:45px;
+    top:310px;
+    width:260px;
+    height:50px;
+    background-image: linear-gradient(95deg, #000000, #333333, #333333, #969696, #000000);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black, -10 -10 20px black;
+}
+
+.base-two {
+    position: absolute;
+    left:35px;
+    top:340px;
+    width:280px;
+    height:50px;
+    background-image: linear-gradient(95deg, #000000, #333333, #333333, #969696, #000000);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black, -10 -10 20px black;
+
+}
+
+.fadeIn {
+    animation: fadeIn ease 4s;
+    font-family: 'Berkshire Swash', cursive;
+    font-size:20px;
+}
+
+/* Animation */
+
+@keyframes bounce {
+   0% {top: 50%;}
+   50% { top: 55%;}
+   100% {top:50%;}
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
