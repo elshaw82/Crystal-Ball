@@ -20,8 +20,13 @@
     background-image: linear-gradient(rgb(26, 26, 104), rgb(4, 4, 32));
 }
 
+.header {
+    display: flex;
+    align-items: baseline;
+}
+
 .intro {
-    padding-top: 40px;
+    padding: 45px 35px 0 10px;
     text-align: center;
     animation: fadeIn ease 4s;
     color:white;
@@ -73,7 +78,7 @@
     box-shadow: -4px -5px 100px white;
 }
 
-#inner {
+.inner {
     position: relative;
     top:50px;
     left:240px;
@@ -138,4 +143,24 @@
     100% {
       opacity:1;
     }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .crystal-ball {
+        position: absolute;
+        top:55%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+    .intro {
+        padding: 45px 10px 0 10px;
+        text-align: center;
+        animation: fadeIn ease 4s;
+        color:white;
+        font-family: 'Berkshire Swash', cursive;
+    }
+    .ask {
+        margin-right: 40px;
+    }
+
   }
